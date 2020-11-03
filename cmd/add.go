@@ -20,7 +20,12 @@ This can be done by by putting 'due:<date>' at the end, where <date> is in (tod|
 Dates can also be explicit, using 3 characters for the month.  They can be written in 2 different formats:
 
 ultralist a buy flowers for mom due:may12
-ultralist get halloween candy due:31oct`
+ultralist get halloween candy due:31oct
+
+Todos can also recur.  Set the 'recur' directive to control recurrence:
+
+ultralist a Daily standup recur:weekdays
+ultralist a 1o1 meeting with jim recur:weekly`
 )
 
 var addCmd = &cobra.Command{
